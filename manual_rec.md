@@ -16,17 +16,19 @@
 ## Letter Case (大文字小文字)の規則の例
 
 - クラス => ルール：最初大文字 + 大文字区切り (アッパーキャメルケース)
-  ```
+  ```python
   class ComnetsExampleClass():
       """これがクラスの書き方です"""
   ```
 
 - 例外 => ルール：最初大文字 + 大文字区切り (アッパーキャメルケース)
-    class ComnetsExampleError(Exception):
-        """これが例外処理の書き方です"""
+  ```python
+  class ComnetsExampleError(Exception):
+      """これが例外処理の書き方です"""
+  ```
 
 - メソッド => ルール：全小文字 + アンダースコア区切り (スネークケース)
-  ```
+  ```python
   class ComnetsExampleClass():
       def _class_only_method(self):
           """自クラス内でのみ完結するメソッドは前にアンダースコアをつける"""
@@ -36,18 +38,24 @@
   ```
 
 - 関数 => ルール：全小文字 + アンダースコア区切り (スネークケース)
-  ```
+  ```python
   def comnets_example_fuction():
       """これが関数の書き方です"""
   ```
 
-- 変数 => ルール：全小文字 + アンダースコア区切り (スネークケース)
+- インスタンス変数 => ルール：全小文字 + アンダースコア区切り (スネークケース)
+  ```python
+  self._example_instance = "クラス内でしか使わないインスタンス変数は前にアンダースコアをつける"
+  self.example_instance = "クラス外から参照されるインスタンス変数はアンダースコアをつけない"
   ```
+
+- 変数 => ルール：全小文字 + アンダースコア区切り (スネークケース)
+  ```python
   example_instance = "これが変数の書き方です"
   ```
 
 - 定数 => ルール：全大文字 + アンダースコア区切り (コンスタントケース)
-  ```
+  ```python
   CONST_EXAMPLE = "これが定数の書き方です"
   ```
 
@@ -322,15 +330,6 @@ def sample_method(var1: OriginalClass) -> None:
 - 型指定について，より詳しくは，[ここ](https://future-architect.github.io/articles/20201223/)を参照．
 
 
-
-# READ ME の書き方
-## READ MEとは？
-
-- READ MEとは、”このプロジェクトが何なのか”を**簡潔に**伝える説明書．
-- ソースコードを見る前に、まず**最初に**READ MEを読んで概要を理解してもらう．
-- README.mdというファイルでMarkdown形式で記述するのが一般的．
-- 新しくプロジェクトに加わった人が，ReadMeを読むだけで理解できるよう必ず書きましょう．
-
 ## コーディング規約のチェック
 - コーディング規約(PEP8)に準拠したコードを書いてください．
 - PEP8に準拠しているかどうかは以下のコマンドで確認できます．
@@ -339,6 +338,15 @@ def sample_method(var1: OriginalClass) -> None:
 flake8
 ```
 - また，VSCodeの拡張機能でflake8をインストールしていれば，エディタ上で警告が出ます．
+
+
+# READ ME の書き方
+## READ MEとは？
+
+- READ MEとは、”このプロジェクトが何なのか”を**簡潔に**伝える説明書．
+- ソースコードを見る前に、まず**最初に**READ MEを読んで概要を理解してもらう．
+- README.mdというファイルでMarkdown形式で記述するのが一般的．
+- 新しくプロジェクトに加わった人が，ReadMeを読むだけで理解できるよう必ず書きましょう．
 
 
 ## README.mdの構成

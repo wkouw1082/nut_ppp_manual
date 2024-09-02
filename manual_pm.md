@@ -96,6 +96,7 @@ python -m venv venv
 ```bash
 cd <プロジェクトディレクトリのパス>
 source venv/bin/activate
+```
 - `requirements.txt`のライブラリをインストール
   - flake8などがインストールされる
 ```bash
@@ -134,7 +135,7 @@ git push origin main
 ```
 - リーダーがブランチを削除
 ```bash
-git checkout <ブランチ名>
+git branch -d <ブランチ名>
 ```
 - コラボレータはmainブランチに移動
 ```bash
@@ -154,7 +155,7 @@ git push origin main
 ```
 - コラボレータがブランチを削除
 ```bash
-git checkout <ブランチ名>
+git branch -d <ブランチ名>
 ```
 - リーダーがコラボレータ変更を取り込む
 ```bash
