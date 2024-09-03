@@ -95,6 +95,8 @@ git clone https://github.com/<GitHubユーザ名>/<プロジェクト名>.git
 - [ここ](https://suitc-my.sharepoint.com/:f:/g/personal/kwatabe_mail_saitama-u_ac_jp/EvJkjZXiYs9Arh0yXf7RH1ABNLqa_nhQ7RqRY31Oa1md4w?e=aGa5Gh)に今回の演習で作成するプログラムの雛形があります．
 - すべてのファイルをダウンロードして，以下のコマンドでGitHubからcloneしてできたディレクトリにコピーしてください．
   - GUIでコピーすると不可視ファイル`.gitignore`などがコピーされない可能性があることに注意してください．
+  - WSLの場合，Windows側のファイルは`/mnt/c/`の中に保存されていることに注意してください．
+    - 例えば，`C:\Users\username\Downloads\dir`にダウンロードした場合は，`/mnt/c/Users/username/Downloads/dir`にファイルが保存されており，`<ダウンロードしたディレクトリのパス>`は，`/mnt/c/Users/username/Downloads/dir/`になります．
 ```shell
 cp -r <ダウンロードしたディレクトリのパス>/* <GitHubからcleneしたディレクトリのパス>/
 cp -r <ダウンロードしたディレクトリのパス>/.* <GitHubからcleneしたディレクトリのパス>/
