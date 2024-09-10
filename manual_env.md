@@ -99,7 +99,7 @@ git clone https://github.com/<GitHubユーザ名>/<プロジェクト名>.git
     - 例えば，`C:\Users\username\Downloads\dir`にダウンロードした場合は，`/mnt/c/Users/username/Downloads/dir`にファイルが保存されており，`<ダウンロードしたディレクトリのパス>`は，`/mnt/c/Users/username/Downloads/dir/`になります．
 ```shell
 cp -r <ダウンロードしたディレクトリのパス>/* <GitHubからcleneしたディレクトリのパス>/
-cp -r <ダウンロードしたディレクトリのパス>/.* <GitHubからcleneしたディレクトリのパス>/
+cp -r <ダウンロードしたディレクトリのパス>/.gitignore <GitHubからcleneしたディレクトリのパス>/
 ```
 - 必要なファイルがコピーされていることを確認してください．
   - コピー先のディレクトリで`ls -a`を実行すると以下のような出力が得られるはずです．
