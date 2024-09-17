@@ -63,11 +63,11 @@ git merge <ブランチ名>
 ```
 - 更新をリモートにプッシュ
 ```bash
-git pull --no-edit origin main
+git push origin main
 ```
 - ブランチを削除
 ```bash
-git checkout <ブランチ名>
+git branch -d <ブランチ名>
 ```
 
 
