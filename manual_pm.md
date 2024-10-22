@@ -63,7 +63,7 @@ git merge --no-edit <ブランチ名>
 ```
 - 更新をリモートにプッシュ
 ```bash
-git pull --no-edit origin main
+git push origin main
 ```
 - ブランチを削除
 ```bash
