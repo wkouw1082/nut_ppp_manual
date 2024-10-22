@@ -335,7 +335,7 @@ def sample_method(var1: OriginalClass) -> None:
 - PEP8に準拠しているかどうかは以下のコマンドで確認できます．
     - pipでflake8がインストールされている必要があります．
 ```shell
-flake8
+flake8 *.py
 ```
 - また，VSCodeの拡張機能でflake8をインストールしていれば，エディタ上で警告が出ます．
 
