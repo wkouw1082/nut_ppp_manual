@@ -59,15 +59,15 @@ git pull --no-edit origin main
 - メインブランチにマージ
 ```bash
 git checkout main
-git merge <ブランチ名>
+git merge --no-edit <ブランチ名>
 ```
 - 更新をリモートにプッシュ
 ```bash
-git push origin main
+git pull --no-edit origin main
 ```
 - ブランチを削除
 ```bash
-git branch -d <ブランチ名>
+git checkout <ブランチ名>
 ```
 
 
@@ -127,7 +127,7 @@ git commit -m "Add <field または player>.py"
 - リーダーがmainブランチに自ブランチをマージ
 ```bash
 git checkout main
-git merge <ブランチ名>
+git merge --no-edit <ブランチ名>
 ```
 - リーダーがリモートにプッシュ
 ```bash
@@ -147,7 +147,7 @@ git pull --no-edit origin main
 ```
 - コラボレータが自ブランチをマージ
 ```bash
-git merge <ブランチ名>
+git merge --no-edit <ブランチ名>
 ```
 - コラボレータがリモートにプッシュ
 ```bash
