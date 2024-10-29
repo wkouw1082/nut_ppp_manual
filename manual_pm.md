@@ -67,7 +67,7 @@ git push origin main
 ```
 - ブランチを削除
 ```bash
-git checkout <ブランチ名>
+git branch -d <ブランチ名>
 ```
 
 
